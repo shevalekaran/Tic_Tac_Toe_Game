@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #333;
+    height:500px;
+
+  }
+
+  .Marquee_text{
+    color:#eee ;
+    font-size: large;
+  }
+  
+  h1 {
+    font-size:50px;
+    margin: 60px;
+    color: #333;
+    opacity: 1;
+    animation: SlideTop 1s 1s alternate ease ;
+    color: aqua;
+  }
+   
+  @keyframes SlideTop {
+    0%{
+      transform: translateY(-1px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(50px);
+      opacity: 1;
+    }
+  }
+  
+  #board {
+    display: inline-block;
+    margin-top: 50px;
+    opacity: 1;
+    animation: Slideslant 1s ease 1s  forwards ;
+  }
+
+  @keyframes Slideslant {
+    0%{
+      transform:scale(0);
+      opacity: 0;
+    }
+    100%{
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+  #board:hover{
+      box-shadow: 10px 10px 10px 5px black;  
+  } 
+  
+  .row {
+    clear: both;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    float: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+  }
+  
+  #message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #eee;
+  }
+  
+
+
+ p{
+  margin-top:150px ;
+    color: white;
+  text-align: center;
+  font-size: 20px;
+ }
+ 

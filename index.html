@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
+
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <marquee class="Marquee_text" behavior="alternate" direction="left"><h4>- Let's Play a Game -</h4></marquee>
+  <div id="board">
+    <div class="row">
+      <div class="cell" onclick="makeMove(0, 0)"></div>
+      <div class="cell" onclick="makeMove(0, 1)"></div>
+      <div class="cell" onclick="makeMove(0, 2)"></div>
+    </div>
+    <div class="row">
+      <div class="cell" onclick="makeMove(1, 0)"></div>
+      <div class="cell" onclick="makeMove(1, 1)"></div>
+      <div class="cell" onclick="makeMove(1, 2)"></div>
+    </div>
+    <div class="row">
+      <div class="cell" onclick="makeMove(2, 0)"></div>
+      <div class="cell" onclick="makeMove(2, 1)"></div>
+      <div class="cell" onclick="makeMove(2, 2)"></div>
+    </div>
+  </div>
+  <div id="message"></div>
+
+<footer class="footer">
+    
+        <p>Copyright &copy; 2023 by Karan A Shewale <i class='bx bxs-heart-circle'></i> | AllRights Reserved.</p>
+   
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
